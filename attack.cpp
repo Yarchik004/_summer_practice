@@ -29,10 +29,6 @@ void board()
 
 void attack(int qX, int qY, int oX, int oY)
 {
-	if (qX == oX && qY == oY)
-	{
-		printf("Queen and the figure can`t be at the same place\n");
-	}
 	if (qX == oX || qY == oY || abs(qX - oX) == abs(qY - oY))
 	{
 		printf("Queen can attack this figure\n");
